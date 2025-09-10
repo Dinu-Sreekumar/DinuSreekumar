@@ -51,7 +51,11 @@ const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
 
         // This is a bit of a hack to update the delay. 
         // Accessing internal options is not ideal but necessary here.
-        (autoplayPlugin.current.options as any).delay = newDelay;
+        if ((autoplayPlugin.current.options as any).delay !== newDelay) {
+            (autoplayPlugin.current.options as any).delay = newDelay;
+            // Resetting the autoplay plugin to apply the new delay
+            autoplayPlugin.current.reset();
+        }
     }
   }, [project.carouselAutoplayDelay]);
 
