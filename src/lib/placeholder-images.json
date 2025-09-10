@@ -3,7 +3,7 @@
     {
       "id": "dinu-sreekumar-profile",
       "description": "Professional headshot of Dinu Sreekumar.",
-      "imageUrl": "https://picsum.photos/seed/dinu/400/400",
+      "imageUrl": "https://avatars.githubusercontent.com/u/173590361?s=400&u=2facae97cc3b03c02d76a63b6bc71e35dcf96623&v=4",
       "imageHint": "professional headshot"
     },
     {
@@ -21,7 +21,7 @@
     {
       "id": "project-finance",
       "description": "Visual representation of a personal finance tracker application.",
-      "imageUrl": "https://picsum.photos/seed/p3/600/400",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/monthly_summary_bar_chart.png?raw=true",
       "imageHint": "finance app"
     }
   ]
