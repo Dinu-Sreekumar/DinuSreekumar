@@ -26,9 +26,9 @@ const Contact = () => {
         </p>
         <div className="mt-8">
             <Button asChild size="lg" className="text-lg">
-                <a href="mailto:dinu.sreekumar@example.com">
+                <a href="mailto:dinusrewkumar@gmail.com">
                     <Mail className="mr-2 h-5 w-5" />
-                    dinu.sreekumar@example.com
+                    dinusrewkumar@gmail.com
                 </a>
             </Button>
         </div>
