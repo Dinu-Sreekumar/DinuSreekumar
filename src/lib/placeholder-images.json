@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "dinu-sreekumar-profile",
+      "description": "Professional headshot of Dinu Sreekumar.",
+      "imageUrl": "https://picsum.photos/seed/dinu/400/400",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "project-ecommerce",
+      "description": "Abstract visualization of an AI-powered e-commerce platform.",
+      "imageUrl": "https://picsum.photos/seed/p1/600/400",
+      "imageHint": "AI e-commerce"
+    },
+    {
+      "id": "project-whiteboard",
+      "description": "Illustration of a real-time collaborative whiteboard.",
+      "imageUrl": "https://picsum.photos/seed/p2/600/400",
+      "imageHint": "collaborative whiteboard"
+    },
+    {
+      "id": "project-finance",
+      "description": "Visual representation of a personal finance tracker application.",
+      "imageUrl": "https://picsum.photos/seed/p3/600/400",
+      "imageHint": "finance app"
+    }
+  ]
 }
