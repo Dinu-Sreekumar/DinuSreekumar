@@ -14,7 +14,7 @@ export type Project = {
   images: ImagePlaceholder[];
   liveUrl?: string;
   githubUrl: string;
-  skills: Skill[];
+  skills: string[];
 };
 
 export const skills: Skill[] = [
@@ -50,12 +50,12 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/Dinu-Sreekumar/Python-Finance-Tracker',
     skills: [
-        skills.find(s => s.name === 'Python')!,
-        skills.find(s => s.name === 'Pandas')!,
-        skills.find(s => s.name === 'Matplotlib')!,
-        skills.find(s => s.name === 'Seaborn')!,
-        skills.find(s => s.name === 'Google Colab')!,
-        skills.find(s => s.name === 'CSV')!,
+        'Python',
+        'Pandas',
+        'Matplotlib',
+        'Seaborn',
+        'Google Colab',
+        'CSV',
     ],
   },
 ];

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import { Github, ExternalLink } from 'lucide-react';
 import {
@@ -9,7 +11,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Project, Skill } from '@/lib/portfolio-data';
+import { Project, skills, Skill } from '@/lib/portfolio-data';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import {
@@ -67,8 +69,8 @@ const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
       </CardContent>
       <CardFooter className="flex-col items-start gap-4 p-6 pt-0">
         <div className="flex flex-wrap gap-2">
-            {project.skills.map((skill: Skill) => (
-                <Badge key={skill.name} variant="secondary">{skill.name}</Badge>
+            {project.skills.map((skillName: string) => (
+                <Badge key={skillName} variant="secondary">{skillName}</Badge>
             ))}
         </div>
         <div className="flex w-full items-center justify-between">
