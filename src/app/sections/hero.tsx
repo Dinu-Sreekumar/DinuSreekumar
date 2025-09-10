@@ -29,10 +29,10 @@ const Hero = () => {
             Dinu Sreekumar
           </h1>
           <p className="mt-4 text-lg text-primary">
-            Full-Stack Developer & AI Enthusiast
+            Full-Stack Developer
           </p>
           <p className="mt-6 max-w-xl text-lg text-foreground/80 md:mx-0 mx-auto">
-            I specialize in building dynamic and responsive web applications using modern technologies. Passionate about creating intuitive user experiences and exploring the possibilities of generative AI.
+            I specialize in building dynamic and responsive web applications using modern technologies. Passionate about creating intuitive user experiences.
           </p>
           <div className="mt-8 flex justify-center gap-4 md:justify-start">
             <Button asChild size="lg">

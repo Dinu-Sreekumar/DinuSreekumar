@@ -1,7 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 import { Nodejs, Mongodb, TypescriptIcon } from '@/components/icons';
-import { Code, BotMessageSquare } from 'lucide-react';
+import { Code } from 'lucide-react';
 
 export type Skill = {
   name: string;
@@ -23,7 +23,6 @@ export const skills: Skill[] = [
   { name: 'MongoDB', icon: Mongodb },
   { name: 'TypeScript', icon: TypescriptIcon },
   { name: 'Next.js', icon: Code },
-  { name: 'GenAI', icon: BotMessageSquare },
 ];
 
 const getImage = (id: string): ImagePlaceholder => {
@@ -45,7 +44,6 @@ export const projects: Project[] = [
         skills.find(s => s.name === 'React')!,
         skills.find(s => s.name === 'Next.js')!,
         skills.find(s => s.name === 'TypeScript')!,
-        skills.find(s => s.name === 'GenAI')!,
     ],
   },
   {
