@@ -4,12 +4,12 @@ import { Button } from './ui/button';
 const Footer = () => {
   const socialLinks = [
     {
-      href: 'https://github.com/dinusreekumar',
+      href: 'https://github.com/Dinu-Sreekumar',
       icon: Github,
       label: 'GitHub',
     },
     {
-      href: 'https://linkedin.com/in/dinusreekumar',
+      href: 'https://www.linkedin.com/in/dinu-sreekumar',
       icon: Linkedin,
       label: 'LinkedIn',
     },
