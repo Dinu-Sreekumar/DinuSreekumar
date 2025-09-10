@@ -11,7 +11,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Project, skills, Skill } from '@/lib/portfolio-data';
+import { Project, skills } from '@/lib/portfolio-data';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import {
@@ -37,6 +37,9 @@ const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
       <CardHeader className="p-0">
         <Carousel
           className="w-full"
+          opts={{
+            loop: true,
+          }}
           plugins={[
             Autoplay({
               delay: 4000,
@@ -69,9 +72,11 @@ const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
       </CardContent>
       <CardFooter className="flex-col items-start gap-4 p-6 pt-0">
         <div className="flex flex-wrap gap-2">
-            {project.skills.map((skillName: string) => (
-                <Badge key={skillName} variant="secondary">{skillName}</Badge>
-            ))}
+            {project.skills.map((skillName: string) => {
+                const skill = skills.find(s => s.name === skillName);
+                if (!skill) return null;
+                return <Badge key={skillName} variant="secondary">{skillName}</Badge>
+            })}
         </div>
         <div className="flex w-full items-center justify-between">
             <div className='flex gap-2'>
