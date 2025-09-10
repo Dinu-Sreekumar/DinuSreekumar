@@ -1,7 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
-import { Nodejs, Mongodb, TypescriptIcon } from '@/components/icons';
-import { Code } from 'lucide-react';
+import { Nodejs, Mongodb, TypescriptIcon, Python } from '@/components/icons';
+import { Code, LineChart, AppWindow, Database } from 'lucide-react';
 
 export type Skill = {
   name: string;
@@ -18,6 +18,10 @@ export type Project = {
 };
 
 export const skills: Skill[] = [
+  { name: 'Python', icon: Python },
+  { name: 'Tkinter', icon: AppWindow },
+  { name: 'Matplotlib', icon: LineChart },
+  { name: 'SQLite', icon: Database },
   { name: 'React', icon: Code },
   { name: 'Node.js', icon: Nodejs },
   { name: 'MongoDB', icon: Mongodb },
@@ -35,38 +39,15 @@ const getImage = (id: string): ImagePlaceholder => {
 
 export const projects: Project[] = [
   {
-    name: 'AI E-commerce Platform',
-    description: 'A modern e-commerce platform featuring AI-powered product recommendations and a seamless checkout experience. Built with a focus on performance and user experience.',
-    image: getImage('project-ecommerce'),
-    liveUrl: '#',
-    githubUrl: '#',
-    skills: [
-        skills.find(s => s.name === 'React')!,
-        skills.find(s => s.name === 'Next.js')!,
-        skills.find(s => s.name === 'TypeScript')!,
-    ],
-  },
-  {
-    name: 'Collaborative Whiteboard',
-    description: 'A real-time collaborative whiteboard application that allows multiple users to draw and share ideas simultaneously. Utilizes WebSockets for instant updates.',
-    image: getImage('project-whiteboard'),
-    liveUrl: '#',
-    githubUrl: '#',
-    skills: [
-        skills.find(s => s.name === 'React')!,
-        skills.find(s => s.name === 'Node.js')!,
-        skills.find(s => s.name === 'TypeScript')!,
-    ],
-  },
-  {
-    name: 'Personal Finance Tracker',
+    name: 'Python Finance Tracker',
     description: 'A comprehensive personal finance tracker to manage budgets, expenses, and investments. Features data visualization to help users understand their spending habits.',
     image: getImage('project-finance'),
-    githubUrl: '#',
+    githubUrl: 'https://github.com/Dinu-Sreekumar/Python-Finance-Tracker',
     skills: [
-        skills.find(s => s.name === 'React')!,
-        skills.find(s => s.name === 'MongoDB')!,
-        skills.find(s => s.name === 'Node.js')!,
+        skills.find(s => s.name === 'Python')!,
+        skills.find(s => s.name === 'Tkinter')!,
+        skills.find(s => s.name === 'Matplotlib')!,
+        skills.find(s => s.name === 'SQLite')!,
     ],
   },
 ];

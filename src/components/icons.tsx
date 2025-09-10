@@ -1,5 +1,18 @@
 import type { SVGProps } from 'react';
 
+export function Python(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="1em" 
+      height="1em" 
+      viewBox="0 0 24 24" 
+      {...props}>
+        <path fill="currentColor" d="M16.75 7.25c.39 0 .75.31.75.75s-.36.75-.75.75H13.5v1.75h2.5c.41 0 .75.34.75.75s-.34.75-.75.75h-2.5v3.25c0 .41-.34.75-.75.75s-.75-.34-.75-.75V11.5h-1v4.5c0 1.25.9 2.25 2 2.25h2.5c1.1 0 2-.75 2-1.75V9.5h.25c.41 0 .75-.34.75-.75s-.34-.75-.75-.75zm-11 2.25c0-.41.34-.75.75-.75h2.5c.41 0 .75.34.75.75s-.34.75-.75.75h-2.5V12h1.75c.41 0 .75.34.75.75s-.34.75-.75.75H7.75v3.5c0 .41-.34.75-.75.75s-.75-.34-.75-.75zM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m-1.25 4.5c.41 0 .75.34.75.75v2.5h-1.5V7.25c0-.41.34-.75.75-.75m4.5 0c.41 0 .75.34.75.75V9.5h-1.5V7.25c0-.41.34-.75.75-.75" />
+    </svg>
+  );
+}
+
 export function Nodejs(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
