@@ -37,10 +37,22 @@
       "imageHint": "balance graph"
     },
     {
-      "id": "churn-prediction-eda",
-      "description": "Exploratory Data Analysis for the Churn Prediction project",
-      "imageUrl": "https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction/blob/main/Screenshot%202024-07-29%20at%203.20.15%E2%80%AFPM.png?raw=true",
-      "imageHint": "data analysis"
+      "id": "churn-prediction-model-performance",
+      "description": "Model performance metrics for the Customer Churn Prediction project",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction/blob/main/screenshots/model_performance_metrics.png?raw=true",
+      "imageHint": "model performance"
+    },
+    {
+      "id": "churn-prediction-confusion-matrix",
+      "description": "Confusion matrix for the Customer Churn Prediction project",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction/blob/main/screenshots/confusion_matrix_plot.png?raw=true",
+      "imageHint": "confusion matrix"
+    },
+    {
+      "id": "churn-prediction-feature-importance",
+      "description": "Feature importance plot for the Customer Churn Prediction project",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction/blob/main/screenshots/feature_importance_plot.png?raw=true",
+      "imageHint": "feature importance"
     }
   ]
 }

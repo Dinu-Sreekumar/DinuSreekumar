@@ -18,8 +18,10 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+import { useEffect, useState, useRef, useCallback } from 'react';
 
 type ProjectCardProps = {
   project: Project;
@@ -27,6 +29,46 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  const autoplayPlugin = useRef(
+    Autoplay({
+      delay: Array.isArray(project.carouselAutoplayDelay) ? project.carouselAutoplayDelay[0] : (project.carouselAutoplayDelay ?? 4000),
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    })
+  );
+
+  const onSelect = useCallback((api: CarouselApi) => {
+    if (!api) return;
+    setCurrent(api.selectedScrollSnap());
+
+    if (Array.isArray(project.carouselAutoplayDelay)) {
+        const newDelay = api.selectedScrollSnap() === 0
+            ? project.carouselAutoplayDela[0]
+            : project.carouselAutoplayDela[1];
+
+        // This is a bit of a hack to update the delay. 
+        // Accessing internal options is not ideal but necessary here.
+        (autoplayPlugin.current.options as any).delay = newDelay;
+    }
+  }, [project.carouselAutoplayDelay]);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    onSelect(api);
+    api.on('select', onSelect);
+
+    return () => {
+      api.off('select', onSelect);
+    };
+  }, [api, onSelect]);
+
+
   return (
     <Card
       className={cn(
@@ -36,17 +78,12 @@ const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
     >
       <CardHeader className="p-0">
         <Carousel
+          setApi={setApi}
           className="w-full"
           opts={{
             loop: true,
           }}
-          plugins={[
-            Autoplay({
-              delay: 4000,
-              stopOnInteraction: false,
-              stopOnMouseEnter: true,
-            }),
-          ]}
+          plugins={[autoplayPlugin.current]}
         >
           <CarouselContent>
             {project.images.map((image, index) => (

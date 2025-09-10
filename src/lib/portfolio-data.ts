@@ -15,6 +15,7 @@ export type Project = {
   liveUrl?: string;
   githubUrl: string;
   skills: string[];
+  carouselAutoplayDelay?: number | number[];
 };
 
 export const skills: Skill[] = [
@@ -66,7 +67,9 @@ export const projects: Project[] = [
     name: 'Customer Churn Prediction',
     description: 'A machine learning model that predicts customer churn using a dataset from a telecommunications company. The project involves data cleaning, exploratory data analysis (EDA), and building a predictive model with Scikit-learn.',
     images: [
-      getImage('churn-prediction-eda')
+      getImage('churn-prediction-model-performance'),
+      getImage('churn-prediction-confusion-matrix'),
+      getImage('churn-prediction-feature-importance'),
     ],
     githubUrl: 'https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction',
     skills: [
@@ -79,5 +82,6 @@ export const projects: Project[] = [
       'Plotly',
       'Scikit-learn',
     ],
+    carouselAutoplayDelay: [5000, 4000],
   }
 ];
