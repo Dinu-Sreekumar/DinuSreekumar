@@ -46,8 +46,8 @@ const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
 
     if (Array.isArray(project.carouselAutoplayDelay)) {
         const newDelay = api.selectedScrollSnap() === 0
-            ? project.carouselAutoplayDela[0]
-            : project.carouselAutoplayDela[1];
+            ? project.carouselAutoplayDelay[0]
+            : project.carouselAutoplayDelay[1];
 
         // This is a bit of a hack to update the delay. 
         // Accessing internal options is not ideal but necessary here.
