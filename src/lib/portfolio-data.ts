@@ -62,6 +62,7 @@ export const projects: Project[] = [
         'Google Colab',
         'CSV',
     ],
+    carouselAutoplayDelay: 4000,
   },
   {
     name: 'Customer Churn Prediction',
