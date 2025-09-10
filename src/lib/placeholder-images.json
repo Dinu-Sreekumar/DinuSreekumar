@@ -35,6 +35,12 @@
       "description": "A line graph showing the cumulative balance over time from the finance tracker.",
       "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/cumulative_balance_line_graph.png?raw=true",
       "imageHint": "balance graph"
+    },
+    {
+      "id": "churn-prediction-eda",
+      "description": "Exploratory Data Analysis for the Churn Prediction project",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction/blob/main/Screenshot%202024-07-29%20at%203.20.15%E2%80%AFPM.png?raw=true",
+      "imageHint": "data analysis"
     }
   ]
 }

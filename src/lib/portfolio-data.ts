@@ -1,6 +1,6 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
-import { Nodejs, Mongodb, TypescriptIcon, Python, Pandas, Seaborn, GoogleColab } from '@/components/icons';
+import { Nodejs, Mongodb, TypescriptIcon, Python, Pandas, Seaborn, GoogleColab, Jupyter, Numpy, ScikitLearn, Plotly } from '@/components/icons';
 import { LineChart, FileSpreadsheet, Code } from 'lucide-react';
 
 export type Skill = {
@@ -29,6 +29,10 @@ export const skills: Skill[] = [
   { name: 'MongoDB', icon: Mongodb },
   { name: 'TypeScript', icon: TypescriptIcon },
   { name: 'Next.js', icon: Code },
+  { name: 'Jupyter', icon: Jupyter },
+  { name: 'NumPy', icon: Numpy },
+  { name: 'Scikit-learn', icon: ScikitLearn },
+  { name: 'Plotly', icon: Plotly },
 ];
 
 const getImage = (id: string): ImagePlaceholder => {
@@ -58,4 +62,22 @@ export const projects: Project[] = [
         'CSV',
     ],
   },
+  {
+    name: 'Customer Churn Prediction',
+    description: 'A machine learning model that predicts customer churn using a dataset from a telecommunications company. The project involves data cleaning, exploratory data analysis (EDA), and building a predictive model with Scikit-learn.',
+    images: [
+      getImage('churn-prediction-eda')
+    ],
+    githubUrl: 'https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction',
+    skills: [
+      'Python',
+      'Jupyter',
+      'Pandas',
+      'NumPy',
+      'Matplotlib',
+      'Seaborn',
+      'Plotly',
+      'Scikit-learn',
+    ],
+  }
 ];
