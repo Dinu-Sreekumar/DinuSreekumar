@@ -44,9 +44,9 @@ export const projects: Project[] = [
     name: 'Python Finance Tracker',
     description: 'A comprehensive personal finance tracker to manage budgets, expenses, and investments. Features data visualization to help users understand their spending habits.',
     images: [
-        getImage('project-finance'),
-        getImage('project-finance-dashboard'),
-        getImage('project-finance-pie-chart'),
+        getImage('finance-monthly-summary'),
+        getImage('finance-expense-pie'),
+        getImage('finance-cumulative-balance'),
     ],
     githubUrl: 'https://github.com/Dinu-Sreekumar/Python-Finance-Tracker',
     skills: [

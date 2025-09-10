@@ -19,22 +19,22 @@
       "imageHint": "collaborative whiteboard"
     },
     {
-      "id": "project-finance",
-      "description": "Visual representation of a personal finance tracker application.",
+      "id": "finance-monthly-summary",
+      "description": "A bar chart showing the monthly summary from the finance tracker.",
       "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/monthly_summary_bar_chart.png?raw=true",
-      "imageHint": "finance app"
+      "imageHint": "summary chart"
     },
     {
-      "id": "project-finance-dashboard",
-      "description": "Dashboard view of the finance tracker.",
-      "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/dashboard.png?raw=true",
-      "imageHint": "finance dashboard"
-    },
-    {
-      "id": "project-finance-pie-chart",
-      "description": "Expense by category pie chart from the finance tracker.",
-      "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/expense_by_category_pie_chart.png?raw=true",
+      "id": "finance-expense-pie",
+      "description": "A pie chart showing expenses by category from the finance tracker.",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/expense_pie_chart.png?raw=true",
       "imageHint": "expense chart"
+    },
+    {
+      "id": "finance-cumulative-balance",
+      "description": "A line graph showing the cumulative balance over time from the finance tracker.",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/cumulative_balance_line_graph.png?raw=true",
+      "imageHint": "balance graph"
     }
   ]
 }
