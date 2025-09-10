@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 import { Nodejs, Mongodb, TypescriptIcon, Python, Pandas, Seaborn, GoogleColab, Jupyter, Numpy, ScikitLearn, Plotly } from '@/components/icons';
@@ -47,7 +48,7 @@ const getImage = (id: string): ImagePlaceholder => {
 export const projects: Project[] = [
   {
     name: 'Python Finance Tracker',
-    description: 'A comprehensive personal finance tracker to manage budgets, expenses, and investments. Features data visualization to help users understand their spending habits.',
+    description: 'This project is a personal finance tracker built entirely in Python, utilizing the power of Pandas for data manipulation and Matplotlib/Seaborn for creating insightful visualizations. It allows users to log income and expense transactions, categorize them, and gain a clear understanding of their financial health through various charts',
     images: [
         getImage('finance-monthly-summary'),
         getImage('finance-expense-pie'),
