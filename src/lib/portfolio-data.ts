@@ -1,7 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
-import { Nodejs, Mongodb, TypescriptIcon, Python } from '@/components/icons';
-import { Code, LineChart, AppWindow, Database } from 'lucide-react';
+import { Nodejs, Mongodb, TypescriptIcon, Python, Pandas, Seaborn, GoogleColab } from '@/components/icons';
+import { Code, LineChart, AppWindow, Database, FileSpreadsheet } from 'lucide-react';
 
 export type Skill = {
   name: string;
@@ -19,9 +19,11 @@ export type Project = {
 
 export const skills: Skill[] = [
   { name: 'Python', icon: Python },
-  { name: 'Tkinter', icon: AppWindow },
+  { name: 'Pandas', icon: Pandas },
   { name: 'Matplotlib', icon: LineChart },
-  { name: 'SQLite', icon: Database },
+  { name: 'Seaborn', icon: Seaborn },
+  { name: 'Google Colab', icon: GoogleColab },
+  { name: 'CSV', icon: FileSpreadsheet },
   { name: 'React', icon: Code },
   { name: 'Node.js', icon: Nodejs },
   { name: 'MongoDB', icon: Mongodb },
@@ -45,9 +47,11 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Dinu-Sreekumar/Python-Finance-Tracker',
     skills: [
         skills.find(s => s.name === 'Python')!,
-        skills.find(s => s.name === 'Tkinter')!,
+        skills.find(s => s.name === 'Pandas')!,
         skills.find(s => s.name === 'Matplotlib')!,
-        skills.find(s => s.name === 'SQLite')!,
+        skills.find(s => s.name === 'Seaborn')!,
+        skills.find(s => s.name === 'Google Colab')!,
+        skills.find(s => s.name === 'CSV')!,
     ],
   },
 ];

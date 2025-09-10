@@ -2,6 +2,12 @@ import { skills } from '@/lib/portfolio-data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Skills = () => {
+  const relevantSkills = [
+    "Python", "Pandas", "Matplotlib", "Seaborn", "Google Colab", "CSV", 
+    "React", "Node.js", "MongoDB", "TypeScript", "Next.js"
+  ];
+  const filteredSkills = skills.filter(skill => relevantSkills.includes(skill.name));
+
   return (
     <section id="skills" className="bg-background-muted py-20 sm:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -14,7 +20,7 @@ const Skills = () => {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
-          {skills.map((skill) => (
+          {filteredSkills.map((skill) => (
             <Card
               key={skill.name}
               className="group transform text-center transition-all duration-300 hover:-translate-y-2 hover:bg-primary/5 hover:border-primary/50"

@@ -67,3 +67,54 @@ export function TypescriptIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function Pandas(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M15.11 3H8.89A2.89 2.89 0 0 0 6 5.89v12.22A2.89 2.89 0 0 0 8.89 21h6.22A2.89 2.89 0 0 0 18 18.11V5.89A2.89 2.89 0 0 0 15.11 3M12 9.17h3.83v2.3H12zm0 4.6h3.83v2.3H12zm-3.83-4.6h2.3v2.3H8.17zm0 4.6h2.3v2.3H8.17zm0 4.6h7.67v2.3H8.17z"
+      ></path>
+    </svg>
+  );
+}
+
+export function Seaborn(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm-1 15v-2h2v2zm0-4v-2h2v2zm0-4V7h2v2z"
+      ></path>
+    </svg>
+  );
+}
+
+export function GoogleColab(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm-2-9.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5zm4 0c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5z"
+      ></path>
+    </svg>
+  );
+}
