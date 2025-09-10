@@ -186,3 +186,29 @@ export function Plotly(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function Npm(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="1em" 
+      height="1em" 
+      viewBox="0 0 24 24"
+      {...props}>
+        <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM9 16H6v-6h3v6zm5.5 0h-4V8h4v8zm5.5 0h-4V8h4v8z" />
+    </svg>
+  );
+}
+
+export function Vscode(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="1em" 
+      height="1em" 
+      viewBox="0 0 24 24"
+      {...props}>
+        <path fill="currentColor" d="M21.17 10.33l-5.88-5.88a2 2 0 0 0-2.83 0L9.63 7.29l4.24 4.24 7.3-7.3a1 1 0 0 1 1.41 1.41L15.3 12.8l-4.24-4.24-2.12 2.12a2 2 0 0 0 0 2.83l5.88 5.88a2 2 0 0 0 2.83 0l2.83-2.83a2 2 0 0 0 0-2.83zM4.22 18.36l5.88-5.88-1.41-1.41-5.88 5.88a1 1 0 0 0 0 1.41h5.66a1 1 0 0 1 0 2H2.81a1 1 0 0 1-.7-1.7z" />
+    </svg>
+  );
+}

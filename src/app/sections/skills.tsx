@@ -17,7 +17,7 @@ const Skills = () => {
     },
     {
       name: 'Tools',
-      skillNames: ['Google Colab'],
+      skillNames: ['Google Colab', 'Git & GitHub', 'NPM', 'VS Code'],
     },
   ];
 

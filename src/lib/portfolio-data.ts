@@ -1,8 +1,8 @@
 
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
-import { Nodejs, Mongodb, TypescriptIcon, Python, Pandas, Seaborn, GoogleColab, Jupyter, Numpy, ScikitLearn, Plotly } from '@/components/icons';
-import { LineChart, FileSpreadsheet, Code } from 'lucide-react';
+import { Nodejs, Mongodb, TypescriptIcon, Python, Pandas, Seaborn, GoogleColab, Jupyter, Numpy, ScikitLearn, Plotly, Npm, Vscode } from '@/components/icons';
+import { LineChart, FileSpreadsheet, Code, Github } from 'lucide-react';
 
 export type Skill = {
   name: string;
@@ -35,6 +35,9 @@ export const skills: Skill[] = [
   { name: 'NumPy', icon: Numpy },
   { name: 'Scikit-learn', icon: ScikitLearn },
   { name: 'Plotly', icon: Plotly },
+  { name: 'Git & GitHub', icon: Github },
+  { name: 'NPM', icon: Npm },
+  { name: 'VS Code', icon: Vscode },
 ];
 
 const getImage = (id: string): ImagePlaceholder => {
@@ -67,7 +70,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Customer Churn Prediction',
-    description: 'This project demonstrates the end-to-end process of building and evaluating a machine learning model to predict customer churn for a telecom company. Leveraging Python, Pandas, and Scikit-learn, this project covers essential data science steps from initial data loading and extensive preprocessing to model training (using a Random Forest Classifier) and comprehensive performance evaluation, culminating in identifying key factors influencing churn.',
+    description: 'This project demonstrates the end-to-end process of building and evaluating a machine learning model to predict customer churn for a telecom company. Leveraging Python, Pandas, and Scikit-learn, this project covers essential data science steps from initial data loading and extensive preprocessing to model training (using a Random Forest Classifier) and comprehensive performance evaluation, culminating in identifying key factors influencing churn.This is a side project developed to enrich my resume and showcase practical skills in data analysis, machine learning, and data visualization.',
     images: [
       getImage('churn-prediction-model-performance'),
       getImage('churn-prediction-confusion-matrix'),
