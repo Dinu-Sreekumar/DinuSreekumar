@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Skills = () => {
   const relevantSkills = [
     "Python", "Pandas", "Matplotlib", "Seaborn", "Google Colab", "CSV", 
-    "React", "Node.js", "MongoDB", "TypeScript", "Next.js", "Scikit-learn"
+    "Scikit-learn"
   ];
   const filteredSkills = skills.filter(skill => relevantSkills.includes(skill.name));
 
