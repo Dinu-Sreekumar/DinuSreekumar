@@ -1,7 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 import { Nodejs, Mongodb, TypescriptIcon, Python, Pandas, Seaborn, GoogleColab } from '@/components/icons';
-import { Code, LineChart, AppWindow, Database, FileSpreadsheet } from 'lucide-react';
+import { LineChart, FileSpreadsheet, Code } from 'lucide-react';
 
 export type Skill = {
   name: string;
@@ -11,7 +11,7 @@ export type Skill = {
 export type Project = {
   name: string;
   description: string;
-  image: ImagePlaceholder;
+  images: ImagePlaceholder[];
   liveUrl?: string;
   githubUrl: string;
   skills: Skill[];
@@ -43,7 +43,11 @@ export const projects: Project[] = [
   {
     name: 'Python Finance Tracker',
     description: 'A comprehensive personal finance tracker to manage budgets, expenses, and investments. Features data visualization to help users understand their spending habits.',
-    image: getImage('project-finance'),
+    images: [
+        getImage('project-finance'),
+        getImage('project-finance-dashboard'),
+        getImage('project-finance-pie-chart'),
+    ],
     githubUrl: 'https://github.com/Dinu-Sreekumar/Python-Finance-Tracker',
     skills: [
         skills.find(s => s.name === 'Python')!,

@@ -12,6 +12,12 @@ import { Button } from '@/components/ui/button';
 import { Project, Skill } from '@/lib/portfolio-data';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 type ProjectCardProps = {
   project: Project;
@@ -27,16 +33,33 @@ const ProjectCard = ({ project, isHighlighted }: ProjectCardProps) => {
       )}
     >
       <CardHeader className="p-0">
-        <div className="aspect-video overflow-hidden">
-          <Image
-            src={project.image.imageUrl}
-            alt={project.image.description}
-            data-ai-hint={project.image.imageHint}
-            width={600}
-            height={400}
-            className="h-full w-full object-cover"
-          />
-        </div>
+        <Carousel
+          className="w-full"
+          plugins={[
+            Autoplay({
+              delay: 4000,
+              stopOnInteraction: false,
+              stopOnMouseEnter: true,
+            }),
+          ]}
+        >
+          <CarouselContent>
+            {project.images.map((image, index) => (
+              <CarouselItem key={index}>
+                <div className="aspect-video overflow-hidden">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    data-ai-hint={image.imageHint}
+                    width={600}
+                    height={400}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </CardHeader>
       <CardContent className="flex-1 p-6">
         <CardTitle className="mb-2">{project.name}</CardTitle>

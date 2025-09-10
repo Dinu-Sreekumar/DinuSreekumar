@@ -23,6 +23,18 @@
       "description": "Visual representation of a personal finance tracker application.",
       "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/monthly_summary_bar_chart.png?raw=true",
       "imageHint": "finance app"
+    },
+    {
+      "id": "project-finance-dashboard",
+      "description": "Dashboard view of the finance tracker.",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/dashboard.png?raw=true",
+      "imageHint": "finance dashboard"
+    },
+    {
+      "id": "project-finance-pie-chart",
+      "description": "Expense by category pie chart from the finance tracker.",
+      "imageUrl": "https://github.com/Dinu-Sreekumar/Python-Finance-Tracker/blob/main/screenshots/expense_by_category_pie_chart.png?raw=true",
+      "imageHint": "expense chart"
     }
   ]
 }
