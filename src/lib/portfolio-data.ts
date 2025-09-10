@@ -66,7 +66,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Customer Churn Prediction',
-    description: 'A machine learning model that predicts customer churn using a dataset from a telecommunications company. The project involves data cleaning, exploratory data analysis (EDA), and building a predictive model with Scikit-learn.',
+    description: 'This project demonstrates the end-to-end process of building and evaluating a machine learning model to predict customer churn for a telecom company. Leveraging Python, Pandas, and Scikit-learn, this project covers essential data science steps from initial data loading and extensive preprocessing to model training (using a Random Forest Classifier) and comprehensive performance evaluation, culminating in identifying key factors influencing churn.',
     images: [
       getImage('churn-prediction-model-performance'),
       getImage('churn-prediction-confusion-matrix'),
@@ -74,11 +74,11 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/Dinu-Sreekumar/Customer-Churn-Prediction',
     skills: [
-      'Python',
-      'Pandas',
-      'Google Colab',
-      'CSV',
-      'Scikit-learn',
+        'Python',
+        'Pandas',
+        'Google Colab',
+        'CSV',
+        'Scikit-learn',
     ],
     carouselAutoplayDelay: [5000, 4000],
   }
